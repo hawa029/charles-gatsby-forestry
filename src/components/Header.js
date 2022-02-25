@@ -32,6 +32,22 @@ export default function Header(props) {
             </Link>
           </h1>
         </div>
+        <div>
+          <h1>
+            <Link
+              to={
+                props.page === 'tarifs'
+                  ? "/"
+                  : "/tarifs"
+              }
+              activeClassName={headerStyles.navItem}
+            >
+              {props.page === 'tarifs'
+                ? "close"
+                : "tarifs"}
+            </Link>
+          </h1>
+        </div>
       </nav>
     </header>
   )
