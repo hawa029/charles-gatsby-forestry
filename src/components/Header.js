@@ -19,7 +19,7 @@ export default function Header(props) {
         <div>
           <h1>
             <Link
-              to={props.page === "galleries" ? "/" : "/Galleries"}
+              to={props.page === "galleries" ? "/" : "/galleries"}
               activeClassName={headerStyles.navItem}
             ></Link>
           </h1>
@@ -30,7 +30,7 @@ export default function Header(props) {
               to={
                 props.page === "tarifs et prestations"
                   ? "/"
-                  : "/Tarifs et prestations"
+                  : "/tarifs et prestations"
               }
               activeClassName={headerStyles.navItem}
             ></Link>
@@ -39,7 +39,7 @@ export default function Header(props) {
         <div>
           <h1>
             <Link
-              to={props.page === "contact" ? "/" : "/Contact"}
+              to={props.page === "contact" ? "/" : "/contact"}
               activeClassName={headerStyles.navItemActive}
             ></Link>
           </h1>
