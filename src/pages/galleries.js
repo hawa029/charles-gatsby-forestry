@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 export default function galleriePage() {
   return (
-    <Layout page="Gallerie" bgColor="inherit">
+    <Layout page="gallerie" bgColor="inherit">
       <section>
        
       </section>

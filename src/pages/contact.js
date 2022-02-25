@@ -6,7 +6,7 @@ import useSiteMetaData from "../static_queries/useSiteMetadata"
 export default function Contact() {
   const { infoData } = useSiteMetaData()
   return (
-    <Layout page="Contact" bgColor={infoData.background_color}>
+    <Layout page="contact" bgColor={infoData.background_color}>
       <section className={infoStyles.info_blurb}>
         <h2>
           <div dangerouslySetInnerHTML={{__html: infoData.description}}></div>

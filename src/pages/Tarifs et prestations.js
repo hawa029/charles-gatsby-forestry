@@ -4,7 +4,7 @@ import Tarifs from "../components/Tarifs"
 
 export default function tarifsPage() {
   return (
-    <Layout page="Tarifs et prestations" bgColor="inherit">
+    <Layout page="tarifs et prestations" bgColor="inherit">
       <section>
         <Tarifs />
       </section>
