@@ -4,7 +4,7 @@ import BlogList from "../components/BlogList"
 
 export default function tarifsPage() {
   return (
-    <Layout page="home" bgColor="inherit">
+    <Layout page="tarifs" bgColor="inherit">
       <section>
         <BlogList />
       </section>
