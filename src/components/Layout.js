@@ -9,7 +9,7 @@ export default function Layout(props) {
   return (
     <section
       className={`${layoutStyles.layout} ${
-        props.page === "contact" && 
+        props.page === "Contact" && 
         layoutStyles.info_page}`}
       style={{
         backgroundColor: props.bgColor,

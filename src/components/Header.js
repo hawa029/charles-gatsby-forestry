@@ -5,7 +5,7 @@ import headerStyles from "../styles/components/header.module.scss"
 export default function Header(props) {
   return (
     <header
-      className={`${headerStyles.header} ${props.page === 'contact' &&
+      className={`${headerStyles.header} ${props.page === 'Contact' &&
         headerStyles.info_page}`}
     >
       <nav
@@ -20,50 +20,46 @@ export default function Header(props) {
           <h1>
             <Link
               to={
-                props.page === 'contact'
+                props.page === 'Galleries'
                   ? "/"
-                  : "/contact"
+                  : "/Galleries"
+              }
+              activeClassName={headerStyles.navItem}
+            >
+           
+            </Link>
+          </h1>
+        </div>
+        <div>
+          <h1>
+            <Link
+              to={
+                props.page === 'Tarifs et prestations'
+                  ? "/"
+                  : "/Tarifs et prestations"
+              }
+              activeClassName={headerStyles.navItem}
+            >
+            
+            </Link>
+          </h1>
+        </div>
+        <div>
+          <h1>
+            <Link
+              to={
+                props.page === 'Contact'
+                  ? "/"
+                  : "/Contact"
               }
               activeClassName={headerStyles.navItemActive}
             >
-              {props.page === 'contact'
-                ? "close"
-                : "contact"}
+            
             </Link>
           </h1>
         </div>
-        <div>
-          <h1>
-            <Link
-              to={
-                props.page === 'tarifs'
-                  ? "/"
-                  : "/tarifs"
-              }
-              activeClassName={headerStyles.navItem}
-            >
-              {props.page === 'tarifs'
-                ? "close"
-                : "tarifs"}
-            </Link>
-          </h1>
-        </div>
-        <div>
-          <h1>
-            <Link
-              to={
-                props.page === 'galleries'
-                  ? "/"
-                  : "/galleries"
-              }
-              activeClassName={headerStyles.navItem}
-            >
-              {props.page === 'galleries'
-                ? "close"
-                : "galleries"}
-            </Link>
-          </h1>
-        </div>
+        
+       
       </nav>
     </header>
   )
