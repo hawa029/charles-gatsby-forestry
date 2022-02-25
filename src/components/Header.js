@@ -48,6 +48,22 @@ export default function Header(props) {
             </Link>
           </h1>
         </div>
+        <div>
+          <h1>
+            <Link
+              to={
+                props.page === 'galleries'
+                  ? "/"
+                  : "/galleries"
+              }
+              activeClassName={headerStyles.navItem}
+            >
+              {props.page === 'galleries'
+                ? "close"
+                : "galleries"}
+            </Link>
+          </h1>
+        </div>
       </nav>
     </header>
   )
