@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
-import BlogList from "../components/BlogList"
+import Tarifs from "../components/Tarifs"
 
 export default function tarifsPage() {
   return (
-    <Layout page="tarifs" bgColor="inherit">
+    <Layout page="Tarifs et prestations" bgColor="inherit">
       <section>
-        <BlogList />
+        <Tarifs />
       </section>
     </Layout>
   )
